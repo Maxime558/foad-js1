@@ -21,12 +21,12 @@ function updateSlide(catalogue) {
     slideTitle.textContent = catalogue[currentIndex].title;
     slideDescription.textContent = catalogue[currentIndex].description;
 }
-
+// Fonction pour pour la prochaine slide
 function transitionToNextSlide(catalogue) {
     currentIndex = (currentIndex + 1) % catalogue.length;
     updateSlide(catalogue);
 }
-
+// Fonction pour pour la slide précédente
 function transitionToPrevSlide(catalogue) {
     currentIndex = (currentIndex - 1 + catalogue.length) % catalogue.length;
     updateSlide(catalogue);
